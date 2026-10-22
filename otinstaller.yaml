@@ -25,7 +25,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/csprecon@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/csprecon@sha256:f0d7358a7446308128080db11bc13a34398e9202bd263cb6e4da7ab0b8106d79
   platforms: [linux/amd64, linux/arm64]
   command: ["csprecon", "-u", "{url}", "-d", "{filter}", "-s", "-j"]
   output_format: jsonl
